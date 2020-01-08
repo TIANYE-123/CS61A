@@ -84,3 +84,59 @@ sum_squares(5, 12)
 def square(square):
     return mul(square, square)
 square(4)
+
+### Lecture 3
+# Print
+'Go Bears'
+print('Go Bears')
+None
+print(None)
+x = -2
+x
+x = print(-2)
+x
+print(print(1), print(2))
+
+# Division
+618 / 10
+618 // 10
+618 % 10
+from operator import truediv, floordiv, mod
+floordiv(618, 10)
+truediv(618, 10)
+mod(618, 10)
+
+# Approximation
+5 / 3
+5 // 3
+5 % 3
+
+# Multiple return values
+def divide_exact(n, d):
+    return n // d, n % d
+quotient, remainder = divide_exact(618, 10)
+
+# Conditional expressions
+def absolute_value(x):
+    """Return the absolute value of X.
+
+    >>> absolute_value(-3)
+    3
+    >>> absolute_value(0)
+    0
+    >>> absolute_value(3)
+    3
+    """
+    if x < 0:
+        return -x
+    elif x == 0:
+        return 0
+    else:
+        return x
+
+# Summation via while
+i, total = 0, 0
+while i < 3:
+    i = i + 1
+    total = total + i
+total
